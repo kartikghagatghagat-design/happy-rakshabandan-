@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raksha Bandhan Wishes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">🪢 Raksha Bandhan</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="wishes.html">Wishes</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="page-header">
+  <h1>Raksha Bandhan Wishes 💌</h1>
+  <p>Share love, happiness and blessings with your siblings.</p>
+</section>
+
+<section class="wishes">
+  <div class="wish-card">
+    <div class="emoji">💖</div>
+    <h2>For Sister</h2>
+    <p>
+      Dear sister, you make every moment brighter.
+      May your life always be filled with happiness,
+      success and beautiful memories.
+    </p>
+    <button onclick="copyWish(this)">Copy Wish</button>
+  </div>
+
+  <div class="wish-card">
+    <div class="emoji">💙</div>
+    <h2>For Brother</h2>
+    <p>
+      Dear brother, thank you for always being there.
+      May you achieve all your dreams and always stay happy.
+    </p>
+    <button onclick="copyWish(this)">Copy Wish</button>
+  </div>
+
+  <div class="wish-card">
+    <div class="emoji">🪷</div>
+    <h2>Heartfelt Wish</h2>
+    <p>
+      May the sacred thread of Rakhi strengthen your bond
+      and fill your lives with love, joy and countless blessings.
+    </p>
+    <button onclick="copyWish(this)">Copy Wish</button>
+  </div>
+</section>
+
+<footer>
+  <p>Made with ❤️ for Raksha Bandhan</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
