@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raksha Bandhan | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">🪢 Raksha Bandhan</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="wishes.html">Wishes</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <p class="small-title">A Celebration of Love & Protection</p>
+    <h1>Happy <span>Raksha Bandhan</span></h1>
+    <p>
+      Celebrating the beautiful bond between brothers and sisters,
+      filled with love, laughter, memories and endless blessings.
+    </p>
+    <a href="wishes.html" class="btn">Explore Wishes ❤️</a>
+  </div>
+
+  <div class="rakhi">
+    <div class="thread"></div>
+    <div class="rakhi-center">
+      <span>ॐ</span>
+    </div>
+    <div class="bead b1"></div>
+    <div class="bead b2"></div>
+    <div class="bead b3"></div>
+    <div class="bead b4"></div>
+  </div>
+</section>
+
+<section class="cards">
+  <div class="card">
+    <div>❤️</div>
+    <h2>Love</h2>
+    <p>A bond that grows stronger with every beautiful memory.</p>
+  </div>
+
+  <div class="card">
+    <div>🛡️</div>
+    <h2>Protection</h2>
+    <p>A promise to always stand beside each other.</p>
+  </div>
+
+  <div class="card">
+    <div>🎁</div>
+    <h2>Celebration</h2>
+    <p>Rakhi, sweets, gifts and lots of family happiness.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Made with ❤️ for Raksha Bandhan</p>
+</footer>
+
+</body>
+</html>
