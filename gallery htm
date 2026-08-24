@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raksha Bandhan Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">🪢 Raksha Bandhan</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="wishes.html">Wishes</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="page-header">
+  <h1>Raksha Bandhan Gallery 📸</h1>
+  <p>Beautiful moments of love, family and celebration.</p>
+</section>
+
+<section class="gallery">
+  <div class="gallery-item">
+    <div class="gallery-icon">🪢</div>
+    <h2>Beautiful Rakhi</h2>
+    <p>A symbol of love and protection.</p>
+  </div>
+
+  <div class="gallery-item">
+    <div class="gallery-icon">👫</div>
+    <h2>Sibling Bond</h2>
+    <p>A relationship full of memories.</p>
+  </div>
+
+  <div class="gallery-item">
+    <div class="gallery-icon">🍬</div>
+    <h2>Sweet Moments</h2>
+    <p>Celebrating together with delicious sweets.</p>
+  </div>
+
+  <div class="gallery-item">
+    <div class="gallery-icon">🎁</div>
+    <h2>Rakhi Gifts</h2>
+    <p>Sharing happiness through thoughtful gifts.</p>
+  </div>
+
+  <div class="gallery-item">
+    <div class="gallery-icon">🌺</div>
+    <h2>Festive Colors</h2>
+    <p>Bright colors make the celebration special.</p>
+  </div>
+
+  <div class="gallery-item">
+    <div class="gallery-icon">👨‍👩‍👧‍👦</div>
+    <h2>Family Time</h2>
+    <p>Creating unforgettable family memories.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Made with ❤️ for Raksha Bandhan</p>
+</footer>
+
+</body>
+</html>
