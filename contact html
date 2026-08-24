@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Rakhi Wish</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">🪢 Raksha Bandhan</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="wishes.html">Wishes</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="page-header">
+  <h1>Send a Rakhi Wish 💌</h1>
+  <p>Write a special message for your brother or sister.</p>
+</section>
+
+<section class="contact-section">
+  <form id="wishForm">
+    <label>Your Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label>Sibling's Name</label>
+    <input type="text" id="sibling" placeholder="Enter sibling's name" required>
+
+    <label>Your Message</label>
+    <textarea id="message" rows="6"
+      placeholder="Write your Raksha Bandhan wish..." required></textarea>
+
+    <button type="submit" class="btn">Send Wish ❤️</button>
+  </form>
+
+  <div id="successMessage" class="success">
+    🎉 Your Rakhi wish has been created successfully!
+  </div>
+</section>
+
+<footer>
+  <p>Made with ❤️ for Raksha Bandhan</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
