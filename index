@@ -1,0 +1,749 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raksha Bandhan ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #4b1935;
+  background: #fff8f1;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(125, 23, 75, 0.96);
+  color: white;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #ffd166;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding: 120px 8% 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  background:
+    radial-gradient(circle at 85% 20%, #ffd166 0, transparent 20%),
+    linear-gradient(135deg, #fff0d8, #ffd5e5);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.tag {
+  color: #c21f5b;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(45px, 7vw, 78px);
+  margin: 15px 0;
+}
+
+.hero h1 span {
+  color: #c21f5b;
+}
+
+.hero p {
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 30px;
+  background: #c21f5b;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #8d1244;
+  transform: translateY(-3px);
+}
+
+/* RAKHI */
+.rakhi {
+  width: 310px;
+  height: 310px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thread {
+  position: absolute;
+  width: 300px;
+  height: 25px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #c21f5b, #ff8fab, #c21f5b);
+}
+
+.rakhi-center {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 15px solid #c21f5b;
+  background: radial-gradient(circle, #ffe49b, #e1a800);
+  box-shadow:
+    0 0 0 13px #ff8fab,
+    0 15px 35px rgba(100, 20, 60, .35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  animation: float 3s ease-in-out infinite;
+}
+
+.rakhi-center span {
+  font-size: 52px;
+  color: #7d174b;
+}
+
+.bead {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #ffd166;
+  border: 5px solid #c21f5b;
+}
+
+.bead.one { left: 5px; top: 80px; }
+.bead.two { left: 35px; bottom: 60px; }
+.bead.three { right: 5px; top: 80px; }
+.bead.four { right: 35px; bottom: 60px; }
+
+@keyframes float {
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+/* SECTIONS */
+section:not(.hero) {
+  padding: 90px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title h2 {
+  font-size: 42px;
+  color: #c21f5b;
+}
+
+.section-title p {
+  margin-top: 10px;
+}
+
+/* ABOUT */
+.about {
+  background: white;
+}
+
+.about-box {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(125,23,75,.12);
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card .icon {
+  font-size: 50px;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  color: #c21f5b;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+/* WISHES */
+.wishes {
+  background: #fff0d8;
+}
+
+.wish-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(125,23,75,.1);
+}
+
+.wish-card p {
+  line-height: 1.7;
+}
+
+.wish-card button {
+  margin-top: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #c21f5b;
+  color: white;
+  cursor: pointer;
+}
+
+/* GALLERY */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.gallery-item {
+  min-height: 200px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffdae8, #ffe5a8);
+  box-shadow: 0 10px 25px rgba(125,23,75,.12);
+  transition: .3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-item div {
+  font-size: 65px;
+}
+
+.gallery-item h3 {
+  margin-top: 12px;
+}
+
+/* FORM */
+.contact {
+  background: linear-gradient(135deg, #7d174b, #c21f5b);
+  color: white;
+}
+
+.contact .section-title h2 {
+  color: white;
+}
+
+form {
+  max-width: 650px;
+  margin: auto;
+  padding: 35px;
+  border-radius: 20px;
+  background: white;
+  color: #4b1935;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 15px 0 7px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 13px;
+  border: 2px solid #f0c7d7;
+  border-radius: 10px;
+  font: inherit;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #c21f5b;
+}
+
+.success {
+  display: none;
+  max-width: 650px;
+  margin: 20px auto 0;
+  padding: 18px;
+  text-align: center;
+  border-radius: 12px;
+  background: #d8f8dd;
+  color: #17652b;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #4b1935;
+  color: white;
+}
+
+/* CONFETTI */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  top: -20px;
+  z-index: 2000;
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(720deg);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+  nav {
+    position: relative;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding-top: 70px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rakhi {
+    transform: scale(.8);
+  }
+
+  .cards,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section:not(.hero) {
+    padding: 65px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="logo">🪢 Raksha Bandhan</div>
+
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#wishes">Wishes</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Message</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+  <div class="hero-text">
+    <div class="tag">A celebration of love & protection</div>
+
+    <h1>
+      Happy <span>Raksha Bandhan</span> ❤️
+    </h1>
+
+    <p>
+      Celebrating the beautiful bond between brothers and sisters —
+      a bond filled with love, laughter, memories and endless blessings.
+    </p>
+
+    <a href="#wishes" class="btn">View Wishes 💌</a>
+  </div>
+
+  <div class="rakhi">
+    <div class="thread"></div>
+
+    <div class="rakhi-center">
+      <span>ॐ</span>
+    </div>
+
+    <div class="bead one"></div>
+    <div class="bead two"></div>
+    <div class="bead three"></div>
+    <div class="bead four"></div>
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+  <div class="section-title">
+    <h2>🌸 About Raksha Bandhan</h2>
+    <p>A special celebration of the sibling bond.</p>
+  </div>
+
+  <div class="about-box">
+    <p>
+      Raksha Bandhan is a traditional Indian festival celebrating
+      the loving relationship between brothers and sisters.
+      On this beautiful occasion, sisters tie a rakhi around
+      their brothers' wrists as a symbol of love and affection.
+    </p>
+
+    <br>
+
+    <p>
+      Families celebrate together with sweets, gifts, blessings,
+      laughter and wonderful memories. The festival reminds us
+      that the bond between siblings is truly special.
+    </p>
+  </div>
+
+</section>
+
+<!-- FEATURES -->
+<section>
+
+  <div class="section-title">
+    <h2>💖 The Bond We Celebrate</h2>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">❤️</div>
+      <h3>Love</h3>
+      <p>
+        A beautiful relationship that becomes stronger
+        with every shared memory.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛡️</div>
+      <h3>Protection</h3>
+      <p>
+        A promise to always support, care for and
+        stand beside each other.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🎁</div>
+      <h3>Celebration</h3>
+      <p>
+        Rakhis, sweets, gifts and family moments
+        make this festival unforgettable.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- WISHES -->
+<section class="wishes" id="wishes">
+
+  <div class="section-title">
+    <h2>💌 Raksha Bandhan Wishes</h2>
+    <p>Send these beautiful wishes to your sibling.</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="wish-card">
+      <div class="icon">💗</div>
+      <h3>For Sister</h3>
+      <p>
+        Dear sister, may your life always be filled with
+        happiness, success and beautiful moments.
+        Happy Raksha Bandhan!
+      </p>
+
+      <button onclick="copyWish(this)">
+        Copy Wish
+      </button>
+    </div>
+
+    <div class="wish-card">
+      <div class="icon">💙</div>
+      <h3>For Brother</h3>
+      <p>
+        Dear brother, thank you for always being there.
+        May all your dreams come true.
+        Happy Raksha Bandhan!
+      </p>
+
+      <button onclick="copyWish(this)">
+        Copy Wish
+      </button>
+    </div>
+
+    <div class="wish-card">
+      <div class="icon">🌺</div>
+      <h3>Heartfelt Wish</h3>
+      <p>
+        May the sacred thread of Rakhi strengthen your bond
+        and fill your lives with love, joy and blessings.
+      </p>
+
+      <button onclick="copyWish(this)">
+        Copy Wish
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+
+  <div class="section-title">
+    <h2>📸 Rakhi Gallery</h2>
+    <p>Beautiful symbols of the festival.</p>
+  </div>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <div>🪢</div>
+      <h3>Beautiful Rakhi</h3>
+    </div>
+
+    <div class="gallery-item">
+      <div>👫</div>
+      <h3>Sibling Bond</h3>
+    </div>
+
+    <div class="gallery-item">
+      <div>🍬</div>
+      <h3>Sweet Moments</h3>
+    </div>
+
+    <div class="gallery-item">
+      <div>🎁</div>
+      <h3>Rakhi Gifts</h3>
+    </div>
+
+    <div class="gallery-item">
+      <div>🌸</div>
+      <h3>Festive Colors</h3>
+    </div>
+
+    <div class="gallery-item">
+      <div>👨‍👩‍👧‍👦</div>
+      <h3>Family Time</h3>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MESSAGE -->
+<section class="contact" id="contact">
+
+  <div class="section-title">
+    <h2>💌 Create Your Wish</h2>
+    <p>Write a special Raksha Bandhan message.</p>
+  </div>
+
+  <form id="wishForm">
+
+    <label>Your Name</label>
+    <input
+      type="text"
+      id="name"
+      placeholder="Enter your name"
+      required
+    >
+
+    <label>Sibling's Name</label>
+    <input
+      type="text"
+      id="sibling"
+      placeholder="Enter sibling's name"
+      required
+    >
+
+    <label>Your Message</label>
+    <textarea
+      id="message"
+      rows="6"
+      placeholder="Write your Rakhi message..."
+      required
+    ></textarea>
+
+    <button class="btn" type="submit">
+      Send Wish ❤️
+    </button>
+
+  </form>
+
+  <div class="success" id="success">
+    🎉 Your Raksha Bandhan wish has been created!
+  </div>
+
+</section>
+
+<footer>
+  <p>Made with ❤️ for Raksha Bandhan</p>
+</footer>
+
+<script>
+/* COPY WISH */
+function copyWish(button) {
+
+  const text =
+    button.parentElement.querySelector("p").innerText;
+
+  navigator.clipboard.writeText(text).then(() => {
+
+    const oldText = button.innerText;
+
+    button.innerText = "Copied! ❤️";
+
+    setTimeout(() => {
+      button.innerText = oldText;
+    }, 1500);
+
+  });
+
+}
+
+/* MESSAGE FORM */
+document
+  .getElementById("wishForm")
+  .addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    document.getElementById("success").style.display = "block";
+
+    createConfetti();
+
+    this.reset();
+
+    setTimeout(() => {
+      document.getElementById("success").style.display = "none";
+    }, 5000);
+
+  });
+
+/* CONFETTI */
+function createConfetti() {
+
+  const colors = [
+    "#c21f5b",
+    "#ffd166",
+    "#ff8fab",
+    "#7d174b",
+    "#ff6b6b"
+  ];
+
+  for (let i = 0; i < 80; i++) {
+
+    const piece = document.createElement("div");
+
+    piece.className = "confetti";
+
+    piece.style.left =
+      Math.random() * 100 + "vw";
+
+    piece.style.background =
+      colors[Math.floor(Math.random() * colors.length)];
+
+    piece.style.animationDuration =
+      (2 + Math.random() * 3) + "s";
+
+    piece.style.transform =
+      "rotate(" + Math.random() * 360 + "deg)";
+
+    document.body.appendChild(piece);
+
+    setTimeout(() => {
+      piece.remove();
+    }, 5000);
+
+  }
+
+}
+</script>
+
+</body>
+</html>
+```
